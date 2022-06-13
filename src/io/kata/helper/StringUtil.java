@@ -29,7 +29,7 @@ public class StringUtil {
 
         // default values
         int result = 0;
-        String delimiter = ";";
+        String delimiter = ",";
         String numbersLine = arg;
 
         // return 0 when argument is empty

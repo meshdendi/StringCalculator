@@ -18,13 +18,13 @@ public class StringUtilTest {
 
     @Test
     public void testStringCalculatorAddPassedDelimiter() {
-        String arg ="1;2;3;6";
+        String arg ="1,2,3,6";
         assertEquals(StringUtil.add(arg), 12);
     }
 
     @Test
     public void testStringCalculatorHandleNegativeNumbers() {
-        String arg ="1;2;3;-6";
+        String arg ="1,2,3,-6";
         assertThrows(NegativeNumbersException.class, () -> StringUtil.add(arg));
     }
 
